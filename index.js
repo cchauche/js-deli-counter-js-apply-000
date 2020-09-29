@@ -1,7 +1,15 @@
-function takeANumber(line,name) {
-  let customerPlace = line.length + 1;
-  line.push(name);
-  return `Welcome, ${name}. You are number ${customerPlace} in line.`;
+// function takeANumber(line,name) {
+//   let customerPlace = line.length + 1;
+//   line.push(name);
+//   return `Welcome, ${name}. You are number ${customerPlace} in line.`;
+// }
+
+var counter = 0;
+
+function takeANumber(line) {
+  counter ++;
+  line.push(counter);
+  return counter;
 }
 
 function nowServing(line) {
